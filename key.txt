@@ -10,3 +10,6 @@ bandit6@bandit:~$ cat $(find / -size 33c -user bandit7 -group bandit6 2>&1 | gre
 bandit7@bandit:~$ cat data.txt | grep millionth --colour=always cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 bandit8@bandit:~$ cat data.txt | sort | uniq -c | sort -n | head -1 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 bandit9@bandit:~$ strings data.txt  | grep -P '=' truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+bandit10@bandit:~$ base64 --decode data.txt IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+bandit12@bandit: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
