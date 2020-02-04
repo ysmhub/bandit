@@ -108,3 +108,86 @@ set shell=/bin/bash
 :r !ls
 :r !./bandit27-do cat /etc/bandit_pass/bandit27
 3ba3118a22e93127a4ed485be72ef5ea
+
+ssh://bandit27-git@localhost/home/bandit27-git/repo
+0ef186ac70e04ea33b4c1853d2526fa2
+
+mktemp -d
+cd $(mktemp -d)
+git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
+less readme
+0ef186ac70e04ea33b4c1853d2526fa2
+
+# Bandit Notes
+Some notes for level29 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: xxxxxxxxxx
+
+git log -p -2
+bbc96594b4e001778eee9975372716b2
+
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: <no passwords in production!>
+
+git branch -a
+git checkout dev
+5b90576bedb2cc04c86a9e924ce42faf
+
+ssh://bandit30-git@localhost/home/bandit30-git/repo
+git rebase master
+
+27: 3ba3118a22e93127a4ed485be72ef5ea
+
+28: 0ef186ac70e04ea33b4c1853d2526fa2
+
+29: bbc96594b4e001778eee9975372716b2
+
+30: 5b90576bedb2cc04c86a9e924ce42faf
+
+bandit30@bandit:/tmp/tmp.wEI6UvV7xB/repo$ git tag
+secret
+bandit30@bandit:/tmp/tmp.wEI6UvV7xB/repo$ git show secret 
+47e603bb428404d265f59c42920d81e5
+
+This time your task is to push a file to the remote repository.
+
+Details:
+    File name: key.txt
+    Content: 'May I come in?'
+    Branch: master
+
+56a9bf19c63d650ce78e6ec0354ee45e
+
+Bandit Level 32 → Level 33
+https://overthewire.org/wargames/bandit/bandit33.html
+After all this git stuff its time for another escape. Good luck!
+
+
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+56a9bf19c63d650ce78e6ec0354ee45e
+
+$ cat /etc/bandit_pass/bandit33
+c9c3199ddf4121b10cf581a98d51caee
+
+WELCOME TO THE UPPERCASE SHELL
+>> $0
+$ ps
+  PID TTY          TIME CMD
+11817 pts/24   00:00:00 sh
+11818 pts/24   00:00:00 sh
+11837 pts/24   00:00:00 ps
+$ pwd
+/home/bandit32
+$ whoami
+bandit33
+$ cat /etc/bandit_pass/bandit33
+c9c3199ddf4121b10cf581a98d51caee
+$ exit
