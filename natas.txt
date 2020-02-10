@@ -102,3 +102,4 @@ http://natas17.natas.labs.overthewire.org/
 natas17
 8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
 
+https://medium.com/hacker-toolbelt/natas-17-blind-sql-injection-with-sqlmap-1e775e937055
