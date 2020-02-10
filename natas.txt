@@ -49,7 +49,30 @@ U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
 
 
 http://natas11.natas.labs.overthewire.org/index-source.html
+Cookies are protected with XOR encryption
+ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw%3D
+http://natas11.natas.labs.overthewire.org/
+
+cookie pass: ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK
+key: qw8J
+The password for natas12 is EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3<br>
+
+curl --user natas12:EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3 http://natas12.natas.labs.overthewire.org/upload/s6uhw9bg7a.jpg
+
+http://natas12.natas.labs.overthewire.org/upload/4cgqclbbur.php
+curl --user natas12:EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3 http://natas12.natas.labs.overthewire.org/upload/4cgqclbbur.php
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+http://natas13.natas.labs.overthewire.org/upload/bs2ldzkr2b.php
+https://github.com/php/php-src/blob/99db00b1f2c6338041bbe3db8b6d0eaee5cd8c94/ext/exif/exif.c
+itype = php_getimagetype(stream, imagefile, NULL);
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+
+breaker14.php
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
 
 
+blind based sql injection
+WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
 
-
+http://natas16.natas.labs.overthewire.org/
